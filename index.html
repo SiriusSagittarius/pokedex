@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Final Edition</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-area">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Logo">
+                <h1>Pokédex</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Pokémon suchen... (Leer = Reset)">
+                <button id="searchBtn" onclick="searchPokemon()">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="loading-spinner"><div class="spinner"></div></div>
+
+    <main id="pokedex-container"></main>
+
+    <button id="loadMoreBtn" class="load-more-btn" onclick="loadNextBatch()">Load More Pokémon</button>
+
+    <div id="overlay" onclick="closeOverlay()">
+        <div class="overlay-card" id="overlay-content" onclick="event.stopPropagation()"></div>
+    </div>
+    
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
