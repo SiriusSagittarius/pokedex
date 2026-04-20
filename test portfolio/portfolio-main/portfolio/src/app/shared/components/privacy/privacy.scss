@@ -1,0 +1,86 @@
+@use '../../style/colors.scss' as *;
+
+.imprint-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $white;
+  overflow: hidden;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4b8efc 0%, #3d7eeb 100%);
+    filter: blur(2px);
+    z-index: 0;
+  }
+
+  .circle-top-right {
+    width: 300px;
+    height: 300px;
+    top: 50px;
+    right: -100px;
+  }
+
+  .circle-bottom-left {
+    width: 200px;
+    height: 200px;
+    bottom: 100px;
+    left: -80px;
+  }
+}
+
+.imprint-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  width: 100%;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+
+  .legal-notice-title {
+    font-size: 90px;
+    color: #4b8efc;
+    font-family: 'Baloo', cursive;
+    margin-bottom: 60px;
+    text-transform: none;
+  }
+
+  .legal-section {
+    margin-bottom: 50px;
+
+    h3 {
+      text-align: left;
+      font-size: 24px;
+      color: #4b8efc;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    strong {
+      display: block;
+      margin-top: 10px;
+      color: #4b8efc;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .imprint-content {
+    .legal-notice-title {
+      font-size: 50px;
+    }
+  }
+  .circle {
+    display: none;
+  }
+}

@@ -1,0 +1,95 @@
+<section
+  [ngClass]="{ 'nav-imprint-page': isImprintPage }"
+  [class.scrolled]="isScrolled"
+  class="row-nav"
+>
+  <div class="main">
+    <div class="nav">
+      <div class="nav-logo">
+        <a routerLink="/"
+          ><img
+            [ngSrc]="mobileNavImage"
+            priority
+            width="100"
+            height="100"
+            alt="Mobile Navigation Image"
+        /></a>
+      </div>
+      <div class="nav-menu">
+        <a class="nav-menu-link" routerLink="/" fragment="aboutme">{{
+          'nav.aboutme' | translate
+        }}</a>
+        <a class="nav-menu-link" routerLink="/" fragment="skills">{{ 'nav.skills' | translate }}</a>
+        <a class="nav-menu-link" routerLink="/" fragment="work">{{ 'nav.work' | translate }}</a>
+        <div class="nav-language-switch">
+          <button
+            (click)="changeLanguage('de')"
+            class="nav-lang-btn"
+            [class.navLangActive]="isDeActive"
+          >
+            DE
+          </button>
+          <span class="nav-language-switch-desk">|</span>
+          <button
+            (click)="changeLanguage('en')"
+            class="nav-lang-btn"
+            [class.navLangActive]="isEnActive"
+          >
+            EN
+          </button>
+        </div>
+        <div class="nav-mobile" (click)="toggle()" [class.open]="isChecked">
+          <img src="./assets/img/icons/burger/burger.svg" alt="Menu" />
+        </div>
+        @if (showBackButton) {
+          <img
+            class="nav-back"
+            src="./assets/img/icons/go_up/navback.svg"
+            alt="Scroll to top"
+            (click)="scrollToTop()"
+          />
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+@if (showOverlay) {
+  <div
+    appScrollAnimation="fade-in-left"
+    class="nav-overlay"
+    (click)="closeMenu()"
+    [class.active]="showOverlay"
+  >
+    @if (isScrolled) {
+      <img
+        class="nav-overlay-close"
+        src="./assets/img/icons/burger/close_final.svg"
+        alt="Close menu"
+      />
+    }
+    <div class="nav-menu-content">
+      <a routerLink="/" fragment="aboutme">{{ 'nav.aboutme' | translate }}</a>
+      <a routerLink="/" fragment="skills">{{ 'nav.skills' | translate }}</a>
+      <a routerLink="/" fragment="work">{{ 'nav.work' | translate }}</a>
+      <a routerLink="/" fragment="contact">{{ 'nav.contact' | translate }}</a>
+      <div class="nav-language-switch">
+        <button
+          (click)="changeLanguage('de')"
+          class="nav-lang-btn"
+          [class.navLangActive]="isDeActive"
+        >
+          DE
+        </button>
+        <span class="nav-language-switch-mobile">|</span>
+        <button
+          (click)="changeLanguage('en')"
+          class="nav-lang-btn"
+          [class.navLangActive]="isEnActive"
+        >
+          EN
+        </button>
+      </div>
+    </div>
+  </div>
+}

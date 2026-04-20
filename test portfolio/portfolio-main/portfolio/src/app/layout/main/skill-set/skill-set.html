@@ -1,0 +1,38 @@
+<section id="skills" class="skillset">
+  <h2 class="h2-2">{{ 'skill.title' | translate }}</h2>
+  <div class="skillset-row">
+    @for (skill of skillIcons; track skill.name) {
+      <figure
+        class="skillset-div"
+        (mouseenter)="hoveredSkill = skill"
+        (mouseleave)="hoveredSkill = null"
+      >
+        <div class="icon-wrapper">
+          <img
+            [src]="imagePath + skill.icon"
+            [alt]="skill.name"
+            class="main-icon"
+            width="80"
+            height="80"
+            loading="lazy"
+          />
+
+          @if (skill.hoverIcon) {
+            <img
+              [src]="imagePath + skill.hoverIcon"
+              class="hover-bubble"
+              [class.show]="hoveredSkill === skill"
+              alt="Tooltip"
+              width="200"
+              height="120"
+              loading="lazy"
+            />
+          }
+        </div>
+
+        <figcaption>{{ skill.name }}</figcaption>
+      </figure>
+    }
+  </div>
+</section>
+<span id="work"></span>

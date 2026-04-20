@@ -1,0 +1,134 @@
+@use './app/shared/style/colors.scss' as *;
+@use './app/shared/style/mixins.scss' as *;
+@use './app/shared/style/fonts.scss' as *;
+@use './app/shared/style/base.scss' as *;
+
+// --- Neue Variablen nach deiner Liste ---
+$h1-d: 120px;
+$h1-m-1: 70px;
+
+$h2-d: 90px;
+$h2-m-1: 64px;
+$h2-m-2: 60px;
+
+$h3-d: 45px;
+$h3-m-1: 32px;
+$h3-m-2: 24px;
+
+$h4-d: 24px;
+$h4-m-1: 18px;
+$h4-m-2: 16px;
+
+$h5-d: 16px;
+$h5-m-1: 14px;
+$h5-m-2: 12px;
+
+// --- Breakpoints ---
+$bp-desktop: 1024px;
+$bp-mobile: 390px;
+$bp-small: 320px;
+
+// --- Mixin für die Skalierung ---
+@mixin heading-size($desktop, $mobile-1, $mobile-2: null) {
+  font-size: $desktop;
+
+  @media (max-width: $bp-desktop) {
+    font-size: $mobile-1;
+  }
+
+  @if $mobile-2 {
+    @media (max-width: $bp-mobile) {
+      font-size: $mobile-2;
+    }
+    @media (max-width: $bp-small) {
+      font-size: calc(#{$mobile-2} * 0.9);
+    }
+  } @else {
+    @media (max-width: $bp-mobile) {
+      font-size: calc(#{$mobile-1} * 0.85);
+    }
+  }
+}
+
+// --- Styles ---
+
+h1,
+.h1 {
+  font-family: $secondary-font;
+  color: $text-blue;
+  line-height: 1;
+  margin: 25px 0px 5px 0px;
+  font-weight: 400;
+  text-align: center;
+  white-space: pre-line;
+  @include heading-size($h1-d, $h1-m-1);
+}
+
+h2,
+.h2 {
+  font-family: $secondary-font;
+  color: $text-blue;
+  @include heading-size($h2-d, $h2-m-1, $h2-m-2);
+  margin: -5px 1px;
+  &.h2-2 {
+    color: #ffffff !important;
+  }
+}
+
+h3,
+.h3 {
+  // Überschreibt Werte aus fonts.scss
+  font-family: $secondary-font;
+  color: $text-blue;
+
+  text-align: left;
+
+  font-weight: 900;
+  line-height: 1;
+  margin: 0 0 100px 0;
+  @include heading-size($h3-d, $h3-m-1, $h3-m-2);
+}
+
+h4,
+.h4 {
+  font-family: $secondary-font;
+  color: $text-blue;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 10px;
+  @include heading-size($h4-d, $h4-m-1, $h4-m-2);
+}
+
+h5,
+.h5 {
+  font-family: $primary-font;
+  color: $text-blue;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 20px;
+  @include heading-size($h5-d, $h5-m-1, $h5-m-2);
+}
+
+// --- Animationen ---
+.hidden-animate {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-left {
+  transform: translateX(-50px);
+}
+.fade-right {
+  transform: translateX(50px);
+}
+.fade-up {
+  transform: translateY(50px);
+}
+
+.show-animate {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}

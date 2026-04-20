@@ -1,0 +1,171 @@
+.references-section {
+  background: linear-gradient(90deg, #4b8efc 0%, #3d7eeb 100%);
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main-title {
+    font-family: 'Baloo', cursive;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    color: #ffffff !important;
+  }
+
+  .sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(14px, 4vw, 40px);
+    white-space: nowrap;
+    font-weight: 400;
+    margin-bottom: 80px;
+  }
+
+  .carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .carousel-viewport {
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .reference-cards {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+
+    .card {
+      flex: 1;
+      box-sizing: border-box;
+      padding: 0 20px;
+      text-align: left;
+
+      .name {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700; 
+        font-size: clamp(16px, 3vw, 28px);
+        white-space: nowrap;
+        text-align: left;
+        margin-bottom: 4px;
+      }
+
+      .project {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 24px;
+        opacity: 0.8;
+      }
+
+      .quote {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400; // Regular
+        font-size: 18px;
+        line-height: 1.5;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .carousel-btn {
+    display: none;
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    transition:
+      transform 0.2s ease,
+      color 0.2s ease;
+    padding: 10px;
+    user-select: none;
+    flex-shrink: 0;
+
+    &:hover {
+      transform: scale(1.2);
+      color: #0043f0;
+;
+    }
+  }
+
+  .carousel-dots {
+    display: none;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+
+    .dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &.active,
+      &:hover {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 901px) {
+  .references-section {
+    .reference-cards {
+      transform: none !important;
+    }
+  }
+}
+
+// Responsive Anpassung für Mobile
+@media (max-width: 900px) {
+  .references-section {
+    .reference-cards {
+      transition: transform 0.5s ease-in-out;
+      align-items: stretch;
+      gap: 0;
+
+      .card {
+        flex: 0 0 100%;
+        min-width: 100%;
+        text-align: center;
+        padding: 0 10px;
+
+        .name,
+        .project,
+        .quote {
+          text-align: center;
+        }
+      }
+    }
+
+    .carousel-btn {
+      display: block;
+      font-size: 30px;
+      padding: 5px;
+    }
+
+    .carousel-dots {
+      display: flex;
+    }
+  }
+}

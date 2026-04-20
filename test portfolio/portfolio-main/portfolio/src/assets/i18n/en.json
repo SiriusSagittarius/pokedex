@@ -1,0 +1,107 @@
+{
+  
+  "nav": {
+    "aboutme": "About me",
+    "skills": "Skill set",
+    "work": "My work",
+    "contact": "Contact"
+  },
+  "header": {
+    "hello": "Hello! I am Sven",
+    "title1": "FULLSTACK ",
+    "title2": "DEVELOPER",
+    "scroll": "SCROLL"
+  },
+  "aboutme": {
+    "title": "Let's work together",
+    "iam": "I am",
+    "location": "located\nin Much",
+    "remote": "open to work\nremote",
+    "relocate": "open to\nrelocate",
+    "letswork": "Software developer from Much with the mentality: 'Impossible is nothing!'\n\nMy current focus is entirely on Python development – here I am actively looking for new challenges to find efficient, scalable solutions for your technical hurdles.\n\nNo matter how tricky the task might be: I will always find a way. Contact me and we will bring your project to fruition together!\n\nI thrive in collaborative environments and enjoy turning complex problems into elegant code.",
+    "buttontxt": "Send message"
+  },
+
+  "skill": {
+    "title": "Skill set"
+  },
+  "myWork": {
+    "title": "My work",
+    "hero": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "pokedex": "Digital Pokedex Register: Development of a data-driven application based on an object-oriented approach. A project that combines modern web technologies with the logic of a digital encyclopedia!",
+    "epl": "Jump and run game based on an object-oriented approach. Collecting coins, throwing objects and a special final boss fight!",
+    "join": "Task management system based on the Kanban model. Creation and organization of tasks including drag and drop function as well as ticket assignment and category structure"
+  },
+  "references": {
+    "title": "Need a teamplayer?",
+    "description": "Here is what my colleagues say about me.",
+    "ref1": {
+      "name": "Roman Unruh",
+      "project": "Project Pokedex",
+      "text": "Sven is a reliable and friendly person. Work in a structured way and write a clear code. I highly recommend him as a colleague."
+    },
+    "ref2": {
+      "name": "Ulrike Paulusch",
+      "project": "Project Join",
+      "text": "Sven is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code."
+    },
+    "ref3": {
+      "name": "Noah Müller",
+      "project": "Project Pollo Loco",
+      "text": "Sven had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person."
+    }
+  },
+  "contact": {
+    "buttontxt": "Say hello",
+    "title": "Contact",
+    "problem": "Got a problem to solve?",
+    "hero": "As a Fullstack Developer, I use Angular and clean code to create intuitive experiences and real value for your projects. Let’s connect – I look forward to hearing from you!",
+    "cta": "Need a Fullstack Developer?",
+    "contactme": " Contact me!",
+    "labelName": "Your Name",
+    "labelNameRequired": "Your name is required",
+    "labelEmail": "Your Mail",
+    "labelMailRequired": "Please enter a valid email address",
+    "labelMessage": "Your Message",
+    "labelMessageRequired": "Your message is too short",
+    "labelCheckbefore": "I've read the ",
+    "labelCheckLink": "privacy policy",
+    "labelCheckAfter": " and agree to the processing of my data as outlined."
+  },
+  "imprint": {
+    "title": "Imprint",
+    "project": "Exploring the Board",
+    "students": "Sven Haase",
+    "address": "Hauptstr.28",
+    "location": "53804 Much",
+    "email_label": "Email: info@svenhaase.de",
+    "terms_h": "Acceptance of terms",
+    "terms_p": "By accessing and using Portfolio (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.",
+    "scope_h": "Scope and ownership of the product",
+    "scope_p1": "Portfolio has been developed as part of a student group project in a web development bootcamp at the Developer Akademie GmbH. It has an educational purpose and is not intended for extensive personal & business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.",
+    "scope_p2": "The design of Portfolio is owned by the Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
+    "rights_h": "Proprietary rights",
+    "rights_p": "Aside from the design owned by Developer Akademie GmbH, we, the listed students, retain all proprietary rights in Portfolio, including any associated copyrighted material, trademarks, and other proprietary information.",
+    "usage_h": "Use of the product",
+    "usage_p": "Portfolio is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of Portfolio for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of Portfolio.",
+    "disclaimer_h": "Disclaimer of warranties and limitation of liability",
+    "disclaimer_p": "Portfolio is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the Developer Akademie, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of Portfolio.",
+    "indemnity_h": "Indemnity",
+    "indemnity_p": "You agree to indemnify, defend and hold harmless us, the listed students, the Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of Portfolio and/or your breach of this Legal Notice.",
+    "footer": "For any questions or notices, please contact us at Email: info@svenhaase.de ",
+    "date": "Date: April 26, 2026"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "h1_allg": "1. Data protection at a glance",
+    "p1_allg": "The following information provides a simple overview of what happens to your personal data when you visit this website.",
+    "h2_hosting": "2. Hosting",
+    "p2_hosting": "We host our website with netcup. The provider is netcup GmbH, Daimlerstraße 25, 76185 Karlsruhe. When you visit our website, netcup collects various log files including your IP address.",
+    "h2_datenerfassung": "3. Data collection on this website",
+    "p3_kontakt": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry.",
+    "h2_rechte": "4. Your rights",
+    "p4_rechte": "You have the right to receive information about the origin, recipient and purpose of your stored personal data at any time free of charge. You also have a right to request the correction or deletion of this data.",
+    "h2_googlefonts": "5. Google Fonts",
+    "p5_googlefonts": "This site uses Google Fonts for the uniform display of fonts. When you call up a page, your browser loads the required fonts into its browser cache."
+  }
+}

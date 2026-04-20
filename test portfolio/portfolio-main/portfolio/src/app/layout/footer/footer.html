@@ -1,0 +1,36 @@
+<footer class="footer">
+  <div class="main">
+    <div class="row-footer">
+      <div class="footer-logo">
+        <a routerLink="/" (click)="navigateToHome()" aria-label="Zurück nach oben">
+          <img ngSrc="assets/img/icons/logo.webp" width="100" height="100" alt="Sven Haase Logo" />
+        </a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-content-name">© Sven Haase 2026</div>
+        <div class="footer-content-imprint">
+          <a routerLink="/imprint" (click)="navigateToImprint()">Legal Notice</a>
+        </div>
+      </div>
+      <nav class="footer-content-social" aria-label="Social Media Links">
+        <a
+          href="https://github.com/siriussagittarius"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub Profil"
+          ><img ngSrc="assets/img/icons/social/github-white.svg" width="40" height="40" alt=""
+        /></a>
+        <a href="mailto:info@svenhaase.de" aria-label="E-Mail schreiben"
+          ><img ngSrc="assets/img/icons/social/mail-white.svg" width="40" height="40" alt=""
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/sven-haase-685858398"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn Profil"
+          ><img ngSrc="assets/img/icons/social/linkedin-white.svg" width="40" height="40" alt=""
+        /></a>
+      </nav>
+    </div>
+  </div>
+</footer>

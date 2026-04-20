@@ -1,0 +1,184 @@
+@use '../../../shared/style/colors.scss' as *;
+@use '../../../shared/style/mixins.scss' as *;
+
+.hero {
+  padding: 80px 18px;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+
+  &-circle-little {
+    @include circle(100px, $primary-color, $secondary-color);
+    position: absolute;
+    top: -95px;
+    right: 300px;
+  }
+}
+
+.row-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 100px;
+}
+
+.col-left {
+  max-width: 606px;
+  width: 100%;
+  height: auto;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.col-right {
+  max-width: 571px;
+  width: 100%;
+  height: auto;
+}
+
+.iam-text {
+  text-align: center;
+  font-family: 'Baloo', cursive;
+  font-weight: 700;
+  font-size: 45px;
+  color: $text-blue;
+  margin: 10px 25px 10px 50px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 60px 10px 10px 20px;
+
+  &::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: '';
+    background-image:
+      url('/assets/img/icons/hero/locb.svg'), url('/assets/img/icons/hero/remoteb.svg'),
+      url('/assets/img/icons/hero/relocb.svg');
+  }
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $text-blue;
+  font-size: 14px;
+
+  span {
+    white-space: pre-line;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  cursor: pointer;
+
+  &:nth-child(1):hover img {
+    content: url('/assets/img/icons/hero/locb.svg');
+  }
+
+  &:nth-child(2):hover img {
+    content: url('/assets/img/icons/hero/remoteb.svg');
+  }
+
+  &:nth-child(3):hover img {
+    content: url('/assets/img/icons/hero/relocb.svg');
+  }
+}
+
+.col-right p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4b4b4b;
+  margin: 100px 0;
+  white-space: pre-line;
+}
+
+.btn-primary-outline {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid $text-blue;
+  border-radius: 8px;
+  color: $text-blue;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $text-blue;
+    color: white;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-circle-little {
+    right: 100px; // Hält den Kreis weiter am Rand / nah am Header-Kreis
+  }
+}
+
+@media (max-width: 1024px) {
+  .row-hero {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .hero-circle-little {
+    right: 20px;
+    top: -75px;
+    height: 62px;
+    width: 62px;
+  }
+  .iam-text {
+    margin: 10px 0;
+  }
+
+  .icon-container {
+    justify-content: center;
+    margin: 40px 0 20px 0;
+    gap: 40px;
+  }
+
+  .col-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-circle-little{    
+    @include circle(62px, $primary-color, $secondary-color);
+    right: 10px;
+    top: -75px;}
+}
+
+@media (max-width: 320px) {
+  .iam-text {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+
+  .hero-circle-little {
+    @include circle(62px, $primary-color, $secondary-color);
+    right: -10px;
+    top: -75px;
+  }
+}

@@ -1,0 +1,394 @@
+@use '../../../shared/style/colors.scss' as *;
+@use '../../../shared/style/fonts.scss' as *;
+@use '../../../shared/style/mixins.scss' as *;
+@use '../../../shared/style/base.scss' as *;
+
+.my-work {
+  padding: 180px 18px;
+  position: relative;
+  overflow: hidden;
+  .main {
+    position: relative;
+  }
+  &-circle-little {
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    @include circle(100px, $primary-color, $secondary-color);
+    z-index: -1;
+  }
+
+  &-circle-big {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    @include circle(183px, $primary-color, $secondary-color);
+    z-index: -1;
+  }
+
+  &-div {
+    display: flex;
+    gap: 20px;
+    padding: 80px 0;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    img {
+      width: 100%;
+      cursor: pointer;
+      box-shadow: 5px 5px 15px 0px #00000026;
+      transition:
+        filter 0.1s ease,
+        transform 0.1s ease;
+      filter: sepia(1) hue-rotate(120deg) brightness(0.8);
+    }
+
+    img:hover {
+      filter: none;
+      transform: scale(1.05) translateY(-30px);
+    }
+    &-circle-1 {
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      @include circle(390px, $primary-color, $secondary-color);
+      z-index: -1;
+    }
+    &-circle-2 {
+      position: absolute;
+      top: 52%;
+      right: -20%;
+      @include circle(550px, $primary-color, $secondary-color);
+      z-index: -1;
+    }
+    &-circle-3 {
+      position: absolute;
+      top: 66%;
+      left: 8%;
+      @include circle(51px, $primary-color, $secondary-color);
+      z-index: -1;
+    }
+    &-circle-4 {
+      position: absolute;
+      top: 93%;
+      left: -12%;
+      @include circle(230px, $primary-color, $secondary-color);
+      z-index: -1;
+    }
+    &-content {
+      font-size: 16px;
+      font-family: $primary-font;
+      line-height: 2;
+      margin: 0 0 50px 0;
+      &-mobile-btn {
+        display: none;
+        background-color: $text-blue;
+        color: $white;
+        white-space: nowrap;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+    &-default {
+      flex-direction: row;
+    }
+    &-reverse {
+      flex-direction: row-reverse;
+      text-align: right;
+      .my-work-title {
+        h3 {
+          text-align: right;
+        }
+      }
+      .my-work-language {
+        .tech-stack {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .tech-stack {
+    text-align: left;
+    line-height: 0;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  &-div:first-child {
+    padding-top: 0;
+  }
+
+  &-div:last-child {
+    padding-bottom: 0;
+  }
+}
+h1 {
+  font-size: 96px;
+  color: $text-blue;
+}
+.row {
+  &-my-work-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  &-my-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 180px 0 0 0;
+  }
+}
+
+@media (min-width: 1119px) {
+  .my-work {
+    &-circle-little {
+      top: -80px;
+      left: 50%;
+      @include circle(100px, $primary-color, $secondary-color);
+    }
+    &-circle-big {
+      top: 31%;
+      @include circle(182px, $primary-color, $secondary-color);
+    }
+    &-div {
+      &-circle-1 {
+        top: 25%;
+        left: -10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1119px) {
+  .my-work {
+    overflow: hidden;
+    &-circle-little {
+      top: -100px;
+      left: 50%;
+    }
+    &-circle-big {
+      top: 30%;
+      left: 80%;
+    }
+    &-div {
+      padding: 50px 0;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      img {
+        width: 80%;
+        cursor: pointer;
+        box-shadow: 5px 5px 15px 0px #00000026;
+        transition: none;
+        filter: none;
+      }
+
+      img:hover {
+        transform: none;
+      }
+
+      &-content {
+        margin: 0px auto 50px auto;
+        width: 80%;
+      }
+      &-circle-1 {
+        top: 14%;
+        left: -10%;
+      }
+      &-circle-2 {
+        top: 42%;
+        left: 70%;
+      }
+      &-circle-3 {
+        display: none;
+      }
+      &-circle-4 {
+        top: 84%;
+        left: 8%;
+      }
+    }
+    .my-work-title {
+      h3 {
+        text-align: center;
+      }
+    }
+    .my-work-language {
+      .tech-stack {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .my-work {
+    &-circle-little {
+      top: -120px;
+      left: 40%;
+    }
+    &-circle-big {
+      left: 70%;
+    }
+    &-div {
+      &-btn-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+      &-content {
+        width: 80%;
+        &-mobile-btn {
+          display: block;
+        }
+      }
+      &-circle-1 {
+        top: 14%;
+        left: -10%;
+      }
+      &-circle-4 {
+        // top: 82%;
+        top: 77%;
+        left: 0%;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .my-work {
+    padding: 100px 18px;
+    overflow: hidden;
+    &-circle-little {
+      top: -120px;
+      left: 50%;
+      @include circle(80px, $primary-color, $secondary-color);
+    }
+    &-circle-big {
+      top: 67%;
+      left: 77%;
+      @include circle(100px, $primary-color, $secondary-color);
+    }
+    &-div {
+      &-circle-1 {
+        @include circle(190px, $primary-color, $secondary-color);
+        top: 19%;
+        left: -81px;
+      }
+      &-circle-2 {
+        top: 49%;
+        left: 70%;
+        @include circle(300px, $primary-color, $secondary-color);
+      }
+      &-circle-4 {
+        top: 67%;
+        left: -20%;
+      }
+      img {
+        width: 100%;
+      }
+
+      &-reverse {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .row {
+    &-my-work-hero {
+      flex-direction: column;
+    }
+    &-my-work {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .my-work {
+    &-circle-big {
+      top: 80%;
+      left: 77%;
+      @include circle(80px, $primary-color, $secondary-color);
+    }
+    &-div {
+      &-circle-1 {
+        top: 19%;
+        left: -81px;
+      }
+      &-circle-2 {
+        top: 47%;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .my-work {
+    &-div {
+      &-circle-4 {
+        left: -20%;
+        top: 79%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 64px !important;
+  }
+
+  .my-work {
+    &-div {
+      &-circle-1 {
+        top: 16%;
+        left: -105px;
+      }
+      &-circle-2 {
+        // top: 44%;
+        top: 55%;
+      }
+      &-circle-4 {
+        left: -20%;
+        // top: 76%;
+        top: 63%;
+      }
+
+      &-content {
+        width: 100%;
+      }
+
+      &-btn-row {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+
+        > * {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .my-work {
+    &-circle-big {
+      top: 90%;
+    }
+    &-div {
+      &-circle-2 {
+        top: 42%;
+      }
+      &-circle-4 {
+        top: 70%;
+      }
+    }
+  }
+}

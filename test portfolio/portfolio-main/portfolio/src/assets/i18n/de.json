@@ -1,0 +1,108 @@
+{
+  "buttontxt": "Nachricht senden",
+  "nav": {
+    "aboutme": "Über mich",
+    "skills": "Skills",
+    "work": "Projekte",
+    "contact": "Kontakt"
+  },
+  "header": {
+    "hello": "Hallo, ich bin Sven",
+    "title1": "FULLSTACK ",
+    "title2": "DEVELOPER",
+    "scroll": "SCROLL"
+  },
+  "aboutme": {
+    "title": "Lassen Sie\nuns starten",
+    "iam": "Ich bin",
+    "location": "wohnhaft\nin Much",
+    "remote": "offen\nfür alles",
+    "relocate": "Flexibel",
+    "letswork": "„Software-Entwickler aus Much mit der Mentalität: ‚Geht nicht, gibt’s nicht!‘\n\nMein Fokus liegt aktuell voll auf Python – hier suche ich neue Herausforderungen, um effiziente Lösungen für Ihre technischen Hürden zu finden.\n\nEgal wie knifflig die Aufgabe ist: Ich finde den Weg. Kontaktieren Sie mich und wir bringen Ihr Projekt gemeinsam ans Ziel!\n\nLassen Sie uns gemeinsam entwickeln!“",
+    "buttontxt": "Nachricht senden"
+  },
+
+  "skill": {
+    "title": "Skills"
+  },
+
+  "myWork": {
+    "title": "Projekte",
+    "hero": "Folgend finden Sie eine Übersicht meiner Projekte.",
+    "pokedex": "Digitales Pokedex-Register: Entwicklung einer datengetriebenen Anwendung basierend auf einem objektorientierten Ansatz. Ein Projekt, das moderne Web-Technologien mit der Logik eines digitalen Lexikons verbindet!",
+    "epl": "Jump and Run Spiel basierend auf einem Objektorientierten Ansatz. Einsammeln von Münzen, werfen von Objekten und ein spezieller Endboss-Kampf!",
+    "join": "Aufgabenmanagementsystem basierend auf dem Kanban-Modell. Erstellung und Organisation von Aufgaben inklusive Drag-and-Drop-Funktion sowie Ticketzuordnung und Kategorienstruktur."
+  },
+  "references": {
+    "title": "Sie brauchen einen Teamplayer?",
+    "description": "Das sagen meine Kollegen über mich.",
+    "ref1": {
+      "name": "Roman Unruh",
+      "project": "Project Pokedex",
+      "text": "Sven ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt sauberen Code. Ich kann ihn als Kollegen nur wärmstens empfehlen."
+    },
+    "ref2": {
+      "name": "Ulrike Paulusch",
+      "project": "Project Join",
+      "text": "Sven ist ein vertrauenswürdiger Teamplayer und kommt gut mit dem Stress von Deadlines zurecht. Strukturierte Arbeitsweise und klarer Code."
+    },
+    "ref3": {
+      "name": "Noah Müller",
+      "project": "Project Pollo Loco",
+      "text": "Sven hat in Zusammenarbeit mit den Teammitgliedern Inhalte entwickelt, formatiert und bereitgestellt. Er ist eine zuverlässige und freundliche Person."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "problem": "Stehen Sie vor einer Herausforderung oder haben eine Idee für ein Projekt?",
+    "hero": " „Angular-Frontend trifft Python-Backend. Ich biete Clean Code und messbaren Mehrwert für Ihre digitale Vision. Lassen Sie uns gemeinsam Ihr Projekt starten!",
+    "cta": "Ich freue mich wenn Sie",
+    "contactme": " Kontakt mit mir aufnehmen!",
+    "labelName": "Name",
+    "labelNameRequired": "Ihr Name ist erforderlich.",
+    "labelEmail": "E-Mail",
+    "labelMailRequired": "Ihre E-Mail ist erforderlich.",
+    "labelMessage": "Nachricht",
+    "labelMessageRequired": "Ihre Nachricht ist zu kurz.",
+    "labelCheckbefore": "Ich habe die ",
+    "labelCheckLink": "Datenschutzrichtlinie",
+    "labelCheckAfter": "gelesen und stimme der Verarbeitung meiner Daten gemäß den darin beschriebenen Bedingungen zu.",
+    "buttontxt": "Nachricht senden"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "project": "Exploring the Board",
+    "students": "Sven Haase",
+    "address": "Hauptstr.28",
+    "location": "53804 Much",
+    "email_label": "Email: info@svenhaase.de",
+    "terms_h": "Annahme der Bedingungen",
+    "terms_p": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien oder Änderungen an, die Ihnen von Zeit zu Zeit präsentiert werden können. Wir, die aufgeführten Studenten, können die Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung aktualisieren oder ändern.",
+    "scope_h": "Umfang und Eigentum am Produkt",
+    "scope_p1": "Portfolio wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklung-Bootcamp bei der Developer Akademie GmbH entwickelt. Es dient Ausbildungszwecken und ist nicht für eine umfassende persönliche oder geschäftliche Nutzung bestimmt. Daher können wir keine gleichbleibende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Qualitätsaspekte in Bezug auf dieses Produkt garantieren.",
+    "scope_p2": "Das Design von Portfolio ist Eigentum der Developer Akademie GmbH. Die unbefugte Nutzung, Reproduktion, Änderung, Verteilung oder Vervielfältigung des Designs ist strengstens untersagt.",
+    "rights_h": "Eigentumsrechte",
+    "rights_p": "Abgesehen von dem Design im Eigentum der Developer Akademie GmbH behalten wir, die aufgeführten Studenten, alle Eigentumsrechte an Portfolio, einschließlich aller damit verbundenen urheberrechtlich geschützten Materialien, Marken und anderen geschützten Informationen.",
+    "usage_h": "Nutzung des Produkts",
+    "usage_p": "Portfolio darf nur für rechtmäßige Zwecke in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften verwendet werden. Jede Nutzung von Portfolio für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung einer anderen Person ist strengstens untersagt. Sie sind allein verantwortlich für Ihre Interaktionen mit anderen Nutzern von Portfolio.",
+    "disclaimer_h": "Gewährleistungsausschluss und Haftungsbeschränkung",
+    "disclaimer_p": "Portfolio wird im Ist-Zustand bereitgestellt, ohne jegliche ausdrückliche oder stillschweigende Gewährleistung, einschließlich, aber nicht beschränkt auf die stillschweigende Gewährleistung der Marktgängigkeit, der Eignung für einen bestimmten Zweck und der Nichtverletzung von Rechten Dritter. In keinem Fall haften wir, die aufgeführten Studenten oder die Developer Akademie, für direkte, indirekte, zufällige, besondere oder Folgeschäden, einschließlich entgangenem Gewinn, Geschäftswert, Datennutzung oder anderen immateriellen Verlusten, die aus der Nutzung von Portfolio entstehen.",
+    "indemnity_h": "Entschädigung",
+    "indemnity_p": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studenten, die Developer Akademie und unsere Partner schadlos zu halten von jeglichen Ansprüchen, Verlusten oder Haftungen (einschließlich Anwaltskosten), die aus Ihrer Nutzung von Portfolio oder Ihrem Verstoß gegen diesen rechtlichen Hinweis resultieren.",
+    "footer": "Bei Fragen oder Hinweisen kontaktieren Sie uns bitte unter Email: info@svenhaase.de.",
+    "date": "Datum: 26. April 2026"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "h1_allg": "1. Datenschutz auf einen Blick",
+    "p1_allg": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.",
+    "h2_hosting": "2. Hosting",
+    "p2_hosting": "Wir hosten unsere Website bei netcup. Anbieter ist die netcup GmbH, Daimlerstraße 25, 76185 Karlsruhe. Wenn Sie unsere Website besuchen, erfasst netcup verschiedene Logfiles inklusive Ihrer IP-Adressen.",
+    "h2_datenerfassung": "3. Datenerfassung auf dieser Website",
+    "p3_kontakt": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage bei uns gespeichert.",
+    "h2_rechte": "4. Ihre Rechte",
+    "p4_rechte": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen.",
+    "h2_googlefonts": "5. Google Fonts",
+    "p5_googlefonts": "Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten Google Fonts. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts in ihren Browsercache."
+  }
+}

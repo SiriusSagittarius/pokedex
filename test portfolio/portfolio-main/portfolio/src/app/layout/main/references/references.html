@@ -1,0 +1,45 @@
+<section class="references-section">
+  <div class="container">
+    <h4 class="main-title">{{ 'references.title' | translate }}</h4>
+    <p class="sub-title">{{ 'references.description' | translate }}</p>
+
+    <div class="carousel-wrapper" appScrollAnimation="fade-up">
+      <button class="carousel-btn prev" (click)="prev()" aria-label="Vorherige Referenz">
+        &#10094;
+      </button>
+
+      <div class="carousel-viewport">
+        <div class="reference-cards" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+          <article class="card">
+            <p class="name">{{ 'references.ref1.name' | translate }}</p>
+            <span class="project">{{ 'references.ref1.project' | translate }}</span>
+            <blockquote class="quote">„{{ 'references.ref1.text' | translate }}“</blockquote>
+          </article>
+
+          <article class="card">
+            <p class="name">{{ 'references.ref2.name' | translate }}</p>
+            <span class="project">{{ 'references.ref2.project' | translate }}</span>
+            <blockquote class="quote">„{{ 'references.ref2.text' | translate }}“</blockquote>
+          </article>
+
+          <article class="card">
+            <p class="name">{{ 'references.ref3.name' | translate }}</p>
+            <span class="project">{{ 'references.ref3.project' | translate }}</span>
+            <blockquote class="quote">„{{ 'references.ref3.text' | translate }}“</blockquote>
+          </article>
+        </div>
+      </div>
+
+      <button class="carousel-btn next" (click)="next()" aria-label="Nächste Referenz">
+        &#10095;
+      </button>
+    </div>
+
+    <div class="carousel-dots" appScrollAnimation="fade-up" style="transition-delay: 0.2s">
+      <span class="dot" [class.active]="currentIndex === 0" (click)="setIndex(0)"></span>
+      <span class="dot" [class.active]="currentIndex === 1" (click)="setIndex(1)"></span>
+      <span class="dot" [class.active]="currentIndex === 2" (click)="setIndex(2)"></span>
+    </div>
+  </div>
+</section>
+<span id="contact"></span>

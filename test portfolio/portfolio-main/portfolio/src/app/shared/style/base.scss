@@ -1,0 +1,164 @@
+@use './colors.scss' as *;
+@use './fonts.scss' as *;
+
+$max-width-page: 1440px;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: $primary-font;
+  background-color: $white;
+  overflow-x: hidden;
+}
+app-navigation {
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 6;
+}
+h1 {
+  font-family: $secondary-font;
+}
+.main {
+  max-width: $max-width-page;
+  margin: auto;
+  position: relative;
+}
+
+p {
+  font-size: 23px;
+  line-height: 1.8;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-6 {
+  width: 45%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.row,
+.header-row {
+  width: 100%;
+  display: flex;
+}
+
+.btn-primary,
+.btn-secondary,
+.button {
+  font-family: $primary-font;
+  font-size: 23px;
+  padding: 15px 35px;
+  border: 2px solid $text-blue;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary,
+.button {
+  background-color: $text-blue;
+  color: $white;
+
+  &:hover {
+    background-color: transparent;
+    color: $text-blue;
+    transform: scale(1.05);
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: $text-blue;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: radial-gradient(
+      74.22% 74.22% at 19.79% 22.42%,
+      #5988ff 6.25%,
+      #5988ff 51.56%,
+      #0043f0 100%
+    );
+    z-index: -1;
+    transition: width 0.4s ease-out;
+  }
+
+  &:hover {
+    color: $white;
+    transform: scale(1.05);
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+
+    &::before {
+      background: #0043f0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+
+  .col-6,
+  .col-3 {
+    width: 100%;
+  }
+
+  .row,
+  .header-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .button {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  scrollbar-width: auto;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+img {
+  height: auto;
+}

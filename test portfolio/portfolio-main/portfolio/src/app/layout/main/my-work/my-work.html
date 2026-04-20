@@ -1,0 +1,72 @@
+<section class="my-work">
+  <div class="main">
+    <div class="row-my-work-hero">
+      <div class="col-6">
+        <div class="my-work-circle-little"></div>
+        <h2>{{ 'myWork.title' | translate }}</h2>
+        <p>
+          {{ 'myWork.hero' | translate }}
+        </p>
+      </div>
+      <div class="col-6">
+        <div class="my-work-circle-big"></div>
+      </div>
+    </div>
+    <div class="my-work-div-circle-1"></div>
+    <div class="my-work-div-circle-2"></div>
+    <div class="my-work-div-circle-3"></div>
+    <div class="my-work-div-circle-4"></div>
+    @for (project of projects; track project.name; let odd = $odd) {
+      <article class="my-work-div my-work-div-default" [class.my-work-div-reverse]="odd">
+        <div appScrollAnimation="fade-left" class="col-6">
+          <a
+            href="{{ project.liveTest }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Live Test für {{ project.name }}"
+          >
+            <img
+              [ngSrc]="'assets/img/pc_mockup/' + project.mockup"
+              alt="{{ project.name }}"
+              [width]="project.width"
+              [height]="project.height"
+              sizes="(max-width: 720px) 100vw, (max-width: 1119px) 80vw, 45vw"
+              style="height: auto"
+            />
+          </a>
+        </div>
+        <div appScrollAnimation="fade-right" class="col-6">
+          <div class="my-work-title">
+            <h3>{{ project.name | translate }}</h3>
+          </div>
+          <div class="my-work-language">
+            <p class="tech-stack">{{ project.projectLanguage | translate }}</p>
+          </div>
+          <div class="my-work-div-content">
+            {{ project.translatedDescription | translate }}
+          </div>
+          <div class="my-work-div-btn-row">
+            <a
+              class="button my-work-div-content-mobile-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="{{ project.liveTest }}"
+              aria-label="Live Test für {{ project.name }}"
+            >
+              Live test
+            </a>
+            <a
+              class="btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/SiriusSagittarius/{{ project.link }}"
+              aria-label="GitHub Repository für {{ project.name }}"
+            >
+              Github</a
+            >
+          </div>
+        </div>
+      </article>
+    }
+  </div>
+</section>
